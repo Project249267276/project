@@ -88,13 +88,6 @@ sub {
     bottom: -.25em
 }
 
-img {
-    border: 0;
-    vertical-align: middle;
-    display: inline-block;
-    max-width: 100%
-}
-
 svg:not(:root) {
     overflow: hidden
 }
@@ -244,18 +237,7 @@ th {
     box-sizing: border-box
 }
 
-body {
-    margin: 0;
-    min-height: 100%;
-    background-color: #edcf4a;
-    background-image: url("https://assets.website-files.com/63285965f554791ee9971f97/632c60c6edb43c4b2018fe6b_Noise2.webp");
-    background-position: 0 0;
-    background-size: 6.25rem;
-    font-family: Noto Serif Thai;
-    color: #41240f;
-    font-size: 1.0625rem;
-    line-height: 1.4
-}
+body {}
 
 html.w-mod-touch * {
     background-attachment: scroll!important

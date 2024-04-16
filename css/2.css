@@ -79,12 +79,6 @@ input:focus::-webkit-input-placeholder {
     z-index: 99 !important;
 }
 
-html,
-body {
-    overflow: hidden;
-    height: 100%;
-}
-
 
 /* Snippet gets rid of top margin on first element in any rich text*/
 
