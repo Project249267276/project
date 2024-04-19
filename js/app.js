@@ -261,3 +261,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     });
 })(jQuery);
+
+// slider
+var swiperPainter = new Swiper("[data-swiper=painter]", {
+    speed: 800,
+    slidesPerView: 'auto',
+    spaceBetween: 88,
+    centeredSlides: true,
+    autoHeight: true,
+    allowTouchMove: true,
+    navigation: {
+        nextEl: '[data-swiper=next-painter]',
+        prevEl: '[data-swiper=prev-painter]',
+    },
+    loop: true,
+    mousewheel: {
+        enable: true,
+    },
+});
+
+
+swiperPainter.on('realIndexChange', function() {
+    $('.overflow-hidden.mod--img-painter, .img.mod--painter').removeClass('active');
+    let currentSlide = $(swiperPainter.el).find(`.swiper-slide:eq(${swiperPainter.activeIndex})`);
+    $(currentSlide).find('.overflow-hidden.mod--img-painter, .img.mod--painter').addClass('active');
+});
+swiperPainter.slideTo(2, 0);
