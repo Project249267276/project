@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>TheCharmsOfKalasinThaiTextileArtistry</title>
+    <link rel="stylesheet" href="teststyle.css" />
+    <script src="https://kit.fontawesome.com/2b070e02a1.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="pane id__header">
+        <div class="paneInner">
+            <div class="colB" id="mainNav">
+                <div data-focus-lock-disabled="disabled">
+                    <div class="mainNavWrap">
+                        <a class="homeLink" href="sidebar.html"></a>
+                        <button class="stateToggleBtn open__false">
+                            <span class="text" href="sidebar.html">Menu</span><span class="line id__0"></span>
+                            <span class="line id__1"></span><span class="line id__2"></span>
+                        </button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/dist/CSSRulePlugin.min.js"></script>
+<script src="testscript.js"></script>
+
+</html>
