@@ -18,7 +18,7 @@ const scrollTween = gsap.to(scrollingSections, {
 });
 
 gsap.to('.projectname', {
-    fontSize: '25px',
+    fontSize: '0px',
     top: '2rem',
     scrollTrigger: {
         trigger: '.projectname',
