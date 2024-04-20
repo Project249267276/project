@@ -4,6 +4,134 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     width: 100%;
+    height: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 2em;
+    color: wheat;
+    mix-blend-mode: difference;
+    z-index: 2;
+}
+
+nav > div {
+    flex: 1;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    color: wheat;
+}
+
+.toggle-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidemenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.75em 2em 1.5em 2em;
+    background: black;
+    outline: none;
+    border: none;
+    width: 28px;
+    height: 20px;
+    transition: all 250ms ease-out;
+    cursor: pointer;
+}
+
+.sidemenu :before, 
+.sidemenu :after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    background: wheat;
+    transition: all 250ms ease-out;
+    will-change: transform;
+
+}
+
+.sidemenu :before {
+    transform: translateY(-3px);
+}
+
+.sidemenu :after {
+    transform: translateY(-3px);
+}
+
+.active.sidemenu:before {
+    transform: translateY(0) rotate(45deg);
+}
+
+.active.sidemenu:after {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: black;
+    will-change: transfrom;
+}
+
+.overlay-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    cursor: pointer;
+}
+
+.menu-item p {
+    position: relative;
+    text-align: center;
+    font-size: 15vw;
+    line-height: 80%;
+    will-change: transform;
+    transition: letter-spacing 0.3s;
+}
+
+.menu-item p:hover {
+    letter-spacing: 0.075em;
+}
+
+@media(max-width: 900px) {
+    .logo a {
+        font-size: 20px;
+    }
+}
+
